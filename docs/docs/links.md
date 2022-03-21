@@ -8,3 +8,4 @@
 - [Trust this link](https://matias.ma/nsfw/)
 - [Radiooooo](https://radiooooo.com/)
 - [Youtube](https://www.youtube.com/)
+- [Reddit](https://www.reddit.com/)
