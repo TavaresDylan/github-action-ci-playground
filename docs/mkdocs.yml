@@ -1,0 +1,5 @@
+site_name: github-ci-test-doc
+
+
+theme:
+  name: material
