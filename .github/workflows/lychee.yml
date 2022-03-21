@@ -21,7 +21,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1.3.2
         with:
           # Check all markdown and html files in doc folder
-          args: --verbose --no-progress './doc/content/**/*.md' './doc/content/**/*.html'
+          args: --verbose --no-progress './docs/docs/**/*.md'
           # Output format
           format: markdown
           # Output file path
