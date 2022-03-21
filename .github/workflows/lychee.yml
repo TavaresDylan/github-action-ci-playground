@@ -27,7 +27,7 @@ jobs:
           # Output file path
           output: ./lychee/report.md
           # Fail action on broken links
-          fail: true
+          fail: false
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
