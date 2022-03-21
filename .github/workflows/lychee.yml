@@ -4,10 +4,10 @@ name: link-check
 on:
   push:
     paths:
-      - "doc/**"
+      - "docs/**"
   pull_request:
     paths:
-      - "doc/**"
+      - "docs/**"
 
 jobs:
   linkChecker:
