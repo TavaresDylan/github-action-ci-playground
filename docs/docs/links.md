@@ -9,3 +9,4 @@
 - [Youtube](https://www.youtube.com/)
 - [Reddit](https://www.reddit.com/)
 - [Twitter](https://twitter.com/)
+- [Duckduckgo](https://duckduckgo.com/)
