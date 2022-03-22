@@ -11,7 +11,7 @@ on:
       - "docs/**"
 
 jobs:
-  lychee:
+  link-checks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

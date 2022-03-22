@@ -1,4 +1,4 @@
-name: documentation-deployment 
+name: mkdocs 
 
 on:
   workflow_run:
