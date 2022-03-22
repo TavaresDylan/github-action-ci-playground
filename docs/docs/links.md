@@ -12,3 +12,4 @@
 - [Duckduckgo](https://duckduckgo.com/)
 - [Notion](https://www.notion.so/)
 - [Fail link](https://www.fdlskf.com/)
+- [Fail link2](https://www.fdsgte.com/)
