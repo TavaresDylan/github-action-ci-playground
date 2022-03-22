@@ -11,4 +11,3 @@
 - [Twitter](https://twitter.com/)
 - [Duckduckgo](https://duckduckgo.com/)
 - [Notion](https://www.notion.so/)
-- [Fail link](https://www.fdlskf.com/)
