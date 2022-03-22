@@ -10,4 +10,3 @@
 - [Reddit](https://www.reddit.com/)
 - [Twitter](https://twitter.com/)
 - [Duckduckgo](https://duckduckgo.com/)
-- [Notion](https://www.notion.so/)
