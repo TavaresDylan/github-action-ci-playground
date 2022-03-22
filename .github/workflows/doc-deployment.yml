@@ -9,12 +9,6 @@ on:
       - completed
     paths:
       - "docs/**"
-  push:
-    branches:
-      - master 
-      - main
-    paths:
-      - "docs/**"
 jobs:
   deploy:
     runs-on: ubuntu-latest
