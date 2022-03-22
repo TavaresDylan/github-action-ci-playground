@@ -1,4 +1,4 @@
-name: ci 
+name: documentation-deployment 
 
 on:
   workflow_run:
