@@ -1,4 +1,4 @@
-name: link-check
+name: lychee
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
       - "docs/**"
 
 jobs:
-  linkChecker:
+  link-checker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -22,19 +22,7 @@ jobs:
         with:
           # Check all markdown and html files in doc folder
           args: --verbose --no-progress './docs/docs/**/*.md'
-          # Output format
-          format: markdown
-          # Output file path
-          output: ./lychee/report.md
           # Fail action on broken links
-          fail: false
+          fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-      - name: Create Issue From File
-        if: ${{ steps.lychee.outputs.exit_code }} != 0
-        uses: peter-evans/create-issue-from-file@v3
-        with:
-          title: Link Checker Report
-          content-filepath: ./lychee/report.md
-          labels: broken-link
