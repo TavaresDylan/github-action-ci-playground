@@ -1,0 +1,26 @@
+---
+name: label-diff
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  size:
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: pascalgn/size-label-action@1619680c5ac1ef360b944bb56a57587ba4aa2af8
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  paths:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    steps:
+      - uses: actions/labeler@v4
+        with:
+          configuration-path: .github/labeler-paths.yml
+          repo-token: ${{ secrets.GITHUB_TOKEN }}

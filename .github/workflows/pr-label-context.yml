@@ -1,0 +1,19 @@
+---
+name: label-context
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    steps:
+      - uses: docker://cclorg/srvaroa-labeler:latest
+        with:
+          config_path: .github/labeler-context.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
