@@ -1,0 +1,28 @@
+name: Auto Assign to Project(s)
+
+on:
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  assign_project:
+    runs-on: ubuntu-latest
+    name: Assign to project
+    steps:
+    - name: Assign issues to project
+      uses: srggrs/assign-one-project-github-action@1.2.1
+      if: github.event.action == 'opened' && github.event_name == 'issues'
+      with:
+        project: 'https://github.com/users/TavaresDylan/projects/6'
+        column_name: 'Todo'
+
+    - name: Assign pull request to project
+      uses: srggrs/assign-one-project-github-action@1.2.1
+      if: github.event.action == 'opened' && github.event_name == 'pull_request_target'
+      with:
+        project: 'https://github.com/users/TavaresDylan/projects/6'
+        column_name: 'In progress'
