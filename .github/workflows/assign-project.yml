@@ -25,4 +25,4 @@ jobs:
       if: github.event.action == 'opened' && github.event_name == 'pull_request_target'
       with:
         project: 'https://github.com/users/TavaresDylan/projects/6'
-        column_name: 'In progress'
+        column_name: 'In Progress'
