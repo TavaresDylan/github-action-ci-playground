@@ -6,7 +6,7 @@
 - name: duplicate
   description: This issue or pull request already exists.
   color: cfd3d7
-- name: WIP
+- name: WIP 🏗️
   description: This pull request is in Work In Progress state.
   color: ff0000
 - name: stale
