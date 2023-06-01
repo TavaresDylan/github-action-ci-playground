@@ -12,7 +12,7 @@ jobs:
     if: ${{ github.actor != 'dependabot[bot]' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: pascalgn/size-label-action@1619680c5ac1ef360b944bb56a57587ba4aa2af8
+      - uses: pascalgn/size-label-action@37a5ad4ae20ea8032abf169d953bcd661fd82cd3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
