@@ -13,7 +13,7 @@ jobs:
     if: ${{ github.actor != 'dependabot[bot]' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: aslafy-z/conventional-pr-title-action@92dffd1b6fc386c2a6041c4019905c9841cfa30f
+      - uses: aslafy-z/conventional-pr-title-action@eb5c5659332df2f97edf7c8106bff3596b4928d8
         with:
           preset: conventional-changelog-angular@^5.0.6
         env:
