@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.actor != 'dependabot[bot]' }}
     steps:
-      - uses: actions/labeler@v4
+      - uses: actions/labeler@v5
         with:
           configuration-path: .github/labeler-paths.yml
           repo-token: ${{ secrets.GITHUB_TOKEN }}
